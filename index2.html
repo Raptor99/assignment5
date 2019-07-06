@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+<title> Responsive nav-bar with bootstrap4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script1.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> -->
+    
+</head>
+<body id="yo">
+    <div  id="first"class="jumbotron" style="margin-bottom: 0px;">
+    	<h1> Clever techie </h1>
+    	<p> Let's learn Web development </p>
+    </div>
+      <nav id="nav1" class="navbar  navbar-expand-md navbar-light bg-light sticky-top">
+      	<button type="button" style="float: right;" class="navbar-toggler mr-auto"data-toggle="collapse" data-target="#collapse_target">
+      		<span class="navbar-toggler-icon"></span>
+      	</button>
+
+        <div class="collapse navbar-collapse"id="collapse_target">
+           <a class="navbar-brand float-left" href="youtube.html"><img src="images/mainlogo.png"></a>
+    	     <span class="navbar-text">clever techie</span>
+    	  <ul class="navbar-nav ml-auto">
+    		<li class="nav-item-dropdown">
+    			<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Dropdown
+    				<span class="caret"></span>
+    			</a>
+
+    			<div class="dropdown-menu"aria-labelledby="dropdown_target">
+    				<a class="dropdown-item">PHP videos </a>
+    				<a class="dropdown-item">JS Videos </a>
+    				<a class="dropdown-item">CSS videos </a>
+                </div>
+    		</li>
+
+    		<li class="nav-item" id="navHomeButton">
+    			<a class="nav-link" href="index2.html">Home</a>
+    		</li>
+    		<li class="nav-item" id="navMenuButton">
+    			<a class="nav-link" href="#" onclick="$dc.loadMenuCategories();">Menu</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link" href="#">About</a>
+    		</li>
+        </ul>
+          
+       </div>
+     </nav>
+
+     <div class="container" id="main-content">
+     	
+    </div>
+
+
+    <footer class="panel-footer">
+
+    <div class="container">
+
+      <div class="row">
+
+        <section id="hours" class="col-sm-4">
+
+          <span>Hours:</span><br>
+
+          Sun-Thurs: 11:15am - 10:00pm<br>
+
+          Fri: 11:15am - 2:30pm<br>
+
+          Saturday Closed
+
+          <hr class="d-block d-sm-none">
+
+        </section>
+
+        <section id="address" class="col-sm-4">
+
+          <span>Address:</span><br>
+
+          7105 Reisterstown Road<br>
+
+          Baltimore, MD 21215
+
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+
+          <hr id ="sup" class="d-block d-sm-none">
+
+        </section>
+
+        <section id="testimonials" class="col-sm-4">
+
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+
+        </section>
+
+      </div>
+
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
